@@ -22,8 +22,8 @@ To view the portfolio, simply open the `index.html` file in your browser or visi
 
 ## Contact
 Feel free to reach out to me for collaboration or inquiries:
-- **Email**: [your-email@example.com](kmalapane155@gmail.com)
-- **GitHub**: [github.com/yourusername](https://github.com/Lesetja-Malapane)
-- **LinkedIn**: [linkedin.com/in/yourprofile](https://linkedin.com/in/lesetja-malapane-644885326)
+- **Email**: [My Email](gmail.com/kmalapane155@gmail.com)
+- **GitHub**: [Lesetja's Github Profile](https://github.com/Lesetja-Malapane)
+- **LinkedIn**: [Lesetja's LinkedIn Profile](https://linkedin.com/in/lesetja-malapane-644885326)
 
 Thank you for visiting my portfolio!
