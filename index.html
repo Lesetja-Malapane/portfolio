@@ -12,10 +12,10 @@
 <body>
     <header>
         <div class="logo">
-
+            <p id="logo">Portfolio</p>
         </div>
         <div class="navigation">
-            <ul>
+            <ul id="navigation">
                 <li>Home</li>
                 <li>About</li>
                 <li>Contact</li>
@@ -24,65 +24,77 @@
     </header>
     <main>
         <div class="hero">
-            <h1>Hello, World!</h1>
-            <p>
-                I am a passionate web developer and mobile application developer skilled in HTML, CSS, and JavaScript,
-                dedicated to building responsive and user-friendly websites.
-            </p>
-            <img src="" alt="My Picture">
+            <div class="left-hero">
+                <h1>Hello, World!</h1>
+                <p>
+                    I am a passionate web developer and mobile application developer skilled in HTML, CSS, and
+                    JavaScript,
+                    dedicated to building responsive and user-friendly websites.
+                </p>
+            </div>
+            <div class="right-hero">
+                <img src="" alt="My Picture">
+            </div>
         </div>
         <div class="about">
-            <h2>About Me</h2>
-            <p>
-                I started learning how to code in 2024. My Interest in Software Development grew by the day. I then
-                decided to enrol into WeThinkCode, a bootcamp focused on Software development where I learned Languages
-                like Java and Python.
-            </p>
+            <div class="sub-heading">
+                <h2>About Me</h2>
+            </div>
+            <div class="text-description">
+                <p>
+                    I started learning how to code in 2024. My Interest in Software Development grew by the day. I then
+                    decided to enrol into WeThinkCode, a bootcamp focused on Software development where I learned
+                    Languages
+                    like Java and Python.
+                </p>
+            </div>
         </div>
-        <div class="tech stack">
+        <div class="tech-stack">
             <h2>Tech Stack</h2>
-            <div class="card">
-                <p id="language">
-                    Java
-                </p>
-                <p id="description">
-                    A versatile, object-oriented programming language widely used for building cross-platform
-                    applications, from web to mobile and enterprise systems.
-                </p>
-            </div>
-            <div class="card">
-                <p id="language">
-                    Javascript
-                </p>
-                <p id="description">
-                    A dynamic scripting language primarily used to create interactive effects and enhance user
-                    experiences on web pages.
-                </p>
-            </div>
-            <div class="card">
-                <p id="language">
-                    Python
-                </p>
-                <p id="description">
-                    A powerful, easy-to-learn language known for its readability and used in web development, data
-                    science, and automation.
-                </p>
-            </div>
-            <div class="card">
-                <p id="language">
-                    Html
-                </p>
-                <p id="description">
-                    The standard markup language for creating and structuring web pages and applications.
-                </p>
-            </div>
-            <div class="card">
-                <p id="language">
-                    Css
-                </p>
-                <p id="description">
-                    A style sheet language used to control the appearance and layout of web pages.
-                </p>
+            <div class="cards">
+                <div class="card">
+                    <h3 id="language">
+                        Java
+                    </p>
+                    <p id="description">
+                        A versatile, object-oriented programming language widely used for building cross-platform
+                        applications, from web to mobile and enterprise systems.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 id="language">
+                        Javascript
+                    </h3>
+                    <p id="description">
+                        A dynamic scripting language primarily used to create interactive effects and enhance user
+                        experiences on web pages.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 id="language">
+                        Python
+                    </h3>
+                    <p id="description">
+                        A powerful, easy-to-learn language known for its readability and used in web development, data
+                        science, and automation.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 id="language">
+                        Html
+                    </h3>
+                    <p id="description">
+                        The standard markup language for creating and structuring web pages and applications.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 id="language">
+                        Css
+                    </h3>
+                    <p id="description">
+                        A style sheet language used to control the appearance and layout of web pages.
+                    </p>
+                </div>
             </div>
         </div>
         <div class="profiles">
@@ -94,13 +106,14 @@
             </ul>
         </div>
         <div class="contact">
+            <h3>Contact Me:</h3>
             <input type="email" id="email" placeholder="example@comany.com">
             <input type="text" id="message" placeholder="message">
             <button type="submit">Submit</button>
         </div>
     </main>
     <footer>
-        <p>CopyRight &copy; Lesetja Malapane</p>
+        <p>Copyright &copy; Lesetja Malapane</p>
     </footer>
 </body>
 

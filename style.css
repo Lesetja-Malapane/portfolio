@@ -1,1 +1,201 @@
-/* To be added */
+@import "https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Parisienne&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Parisienne&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+p,
+ol,
+ul {
+  margin: 0;
+}
+
+ol[role="list"],
+ul[role="list"] {
+  list-style: none;
+  padding-inline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* above is for css reset */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 25px 50px;
+  border: 1px black solid;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 25px;
+  height: calc(100vh - 25px);
+  padding: 50px 50px;
+  border: 1px black solid;
+}
+
+.left-hero {
+  margin: 50px 0;
+  width: 45%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+
+.right-hero {
+  margin: 50px 0;
+  width: 45%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-hero img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #412dcd; /* optional: adds a border in your theme color */
+}
+
+h1 {
+  font-family: "outfit", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 64px;
+  font-weight: 750;
+  word-spacing: 5px;
+}
+
+h2 {
+  font-family: "outfit", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 48px;
+  font-weight: 750;
+  word-spacing: 5px;
+}
+
+p {
+  font-family: "inter";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+ul,
+#navigation {
+  display: flex;
+  gap: 4em;
+  text-decoration: none;
+  list-style: none;
+}
+
+.about {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 50px;
+  border: 1px black solid;
+}
+
+.sub-heading,
+.text-description {
+  margin: 25px 0;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech-stack {
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 50px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3em;
+  max-width: 1200px;
+}
+
+.card {
+  flex: 1 1 300px;
+  max-width: 350px;
+}
+
+.profiles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30%;
+  padding: 50px;
+  border: 1px black solid;
+}
+
+.profiles ul {
+  font-size: 3em;
+}
+
+i,
+h1,
+h2,
+.logo {
+  color: #412dcd;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  padding: 50px;
+  border: 1px black solid;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #412dcd;
+}
+
+button {
+  background-color: #412dcd;
+}
