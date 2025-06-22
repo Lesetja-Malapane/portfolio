@@ -16,9 +16,9 @@
         </div>
         <div class="navigation">
             <ul id="navigation">
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </header>
@@ -33,7 +33,7 @@
                 </p>
             </div>
             <div class="right-hero">
-                <img src="" alt="My Picture">
+                <img src="/images/WhatsApp Image 2025-06-22 at 4.15.31 PM.jpeg" alt="My Picture">
             </div>
         </div>
         <div class="about">
@@ -55,11 +55,11 @@
                 <div class="card">
                     <h3 id="language">
                         Java
-                    </p>
-                    <p id="description">
-                        A versatile, object-oriented programming language widely used for building cross-platform
-                        applications, from web to mobile and enterprise systems.
-                    </p>
+                    </h3>
+                        <p id="description">
+                            A versatile, object-oriented programming language widely used for building cross-platform
+                            applications, from web to mobile and enterprise systems.
+                        </p>
                 </div>
                 <div class="card">
                     <h3 id="language">
@@ -81,7 +81,7 @@
                 </div>
                 <div class="card">
                     <h3 id="language">
-                        Html
+                        HTML
                     </h3>
                     <p id="description">
                         The standard markup language for creating and structuring web pages and applications.
@@ -89,7 +89,7 @@
                 </div>
                 <div class="card">
                     <h3 id="language">
-                        Css
+                        CSS
                     </h3>
                     <p id="description">
                         A style sheet language used to control the appearance and layout of web pages.
@@ -107,9 +107,15 @@
         </div>
         <div class="contact">
             <h3>Contact Me:</h3>
-            <input type="email" id="email" placeholder="example@comany.com">
-            <input type="text" id="message" placeholder="message">
+            <div class="email">
+                <input type="email" id="email" placeholder="example@comany.com">
+            </div>
+            <div class="message">
+                <textarea id="message" placeholder="message"></textarea>
+            </div>
+            <div class="submit-button">
             <button type="submit">Submit</button>
+            </div>
         </div>
     </main>
     <footer>

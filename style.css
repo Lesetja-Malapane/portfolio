@@ -49,7 +49,6 @@ header {
   flex-direction: row;
   justify-content: space-between;
   padding: 25px 50px;
-  border: 1px black solid;
 }
 
 .hero {
@@ -59,7 +58,7 @@ header {
   gap: 25px;
   height: calc(100vh - 25px);
   padding: 50px 50px;
-  border: 1px black solid;
+  background-color: whitesmoke;
 }
 
 .left-hero {
@@ -82,8 +81,8 @@ header {
 }
 
 .right-hero img {
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 500px;
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid #412dcd; /* optional: adds a border in your theme color */
@@ -125,7 +124,6 @@ ul,
   flex-direction: column;
   align-items: center;
   padding: 50px 50px;
-  border: 1px black solid;
 }
 
 .sub-heading,
@@ -143,6 +141,7 @@ ul,
   flex-direction: column;
   align-items: center;
   padding: 50px 50px;
+  background-color: whitesmoke;
 }
 
 .cards {
@@ -167,7 +166,6 @@ ul,
   justify-content: center;
   height: 30%;
   padding: 50px;
-  border: 1px black solid;
 }
 
 .profiles ul {
@@ -184,9 +182,11 @@ h2,
 .contact {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  gap: 25px;
   height: 30%;
   padding: 50px;
-  border: 1px black solid;
+  background-color: whitesmoke;
 }
 
 footer {
@@ -196,6 +196,43 @@ footer {
   background-color: #412dcd;
 }
 
+footer p {
+  font-size: 15px;
+  font-weight: 300;
+}
+
 button {
   background-color: #412dcd;
+  width: 100px;
+  height: 35px;
+  color: white;
+  font-size: medium;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+input {
+  width: 25vw;
+  height: 2em;
+  padding: 10px;
+}
+
+#message {
+  height: 8em;
+  padding: 10px;
+  width: 25vw;
+}
+
+a {
+  text-decoration: none;
+  color: #412dcd;
+  font-family: inherit;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+a:hover,
+a:focus {
+  color: #2a1a8a;
+  text-decoration: none;
 }
