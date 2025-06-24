@@ -247,3 +247,116 @@ a:focus {
     color: #2a1a8a;
     text-decoration: none;
 }
+
+/* Responsive styles for mobile and tablets */
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+    #navigation {
+        gap: 2em;
+        font-size: 1em;
+    }
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 30px 10px;
+        gap: 20px;
+    }
+    .left-hero,
+    .right-hero {
+        width: 100%;
+        margin: 20px 0;
+        height: auto;
+        align-items: center;
+    }
+    .right-hero img {
+        width: 220px;
+        height: 220px;
+    }
+    h1 {
+        font-size: 2.2em;
+        text-align: center;
+    }
+    h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    h3 {
+        font-size: 1.1em;
+        text-align: center;
+    }
+    p {
+        font-size: 1em;
+        text-align: center;
+    }
+    .about,
+    .tech-stack,
+    .profiles,
+    .contact {
+        padding: 30px 10px;
+        width: 100%;
+    }
+    .sub-heading,
+    .text-description {
+        width: 95%;
+        margin: 15px 0;
+    }
+    .cards {
+        flex-direction: column;
+        gap: 1.5em;
+        max-width: 100%;
+    }
+    .card {
+        max-width: 95vw;
+    }
+    .profiles ul {
+        font-size: 2em;
+        gap: 1em;
+    }
+    input,
+    #message {
+        width: 90vw;
+        font-size: 1em;
+    }
+    button {
+        width: 100%;
+        height: 40px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        padding: 10px 5px;
+    }
+    .hero {
+        padding: 15px 5px;
+    }
+    .about,
+    .tech-stack,
+    .profiles,
+    .contact {
+        padding: 15px 5px;
+    }
+    .right-hero img {
+        width: 140px;
+        height: 140px;
+    }
+    h1 {
+        font-size: 1.4em;
+    }
+    h2 {
+        font-size: 1.1em;
+    }
+    .profiles ul {
+        font-size: 1.3em;
+    }
+    input,
+    #message {
+        width: 95vw;
+    }
+}
