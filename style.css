@@ -4,6 +4,7 @@
 
 :root {
     line-height: 1.5;
+    --base-color: #412dcd
 }
 
 h1,
@@ -86,7 +87,7 @@ header {
     height: 500px;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid #412dcd;
+    border: 3px solid var(--base-color);
     /* optional: adds a border in your theme color */
 }
 
@@ -186,7 +187,7 @@ i,
 h1,
 h2,
 .logo {
-    color: #412dcd;
+    color: var(--base-color);
 }
 
 .contact {
@@ -203,7 +204,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #412dcd;
+    background-color: var(--base-color);
 }
 
 footer p {
@@ -212,7 +213,7 @@ footer p {
 }
 
 button {
-    background-color: #412dcd;
+    background-color: var(--base-color);
     width: 100px;
     height: 35px;
     color: white;
@@ -236,7 +237,7 @@ input {
 
 a {
     text-decoration: none;
-    color: #412dcd;
+    color: var(--base-color);
     font-family: inherit;
     font-weight: 500;
     transition: color 0.2s;
