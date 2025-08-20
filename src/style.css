@@ -1,0 +1,366 @@
+@import "https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Parisienne&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Parisienne&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  line-height: 1.5;
+  --base-color: #412dcd;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+p,
+ol,
+ul {
+  margin: 0;
+}
+
+ol[role="list"],
+ul[role="list"] {
+  list-style: none;
+  padding-inline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* above is for css reset */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 25px 50px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 25px;
+  height: calc(100vh - 25px);
+  padding: 50px 50px;
+  background-color: whitesmoke;
+}
+
+.left-hero {
+  margin: 50px 0;
+  width: 45%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+
+.right-hero {
+  margin: 50px 0;
+  width: 45%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-hero img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--base-color);
+  /* optional: adds a border in your theme color */
+}
+
+h1 {
+  font-family:
+    "outfit", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 64px;
+  font-weight: 750;
+  word-spacing: 5px;
+}
+
+h2 {
+  font-family:
+    "outfit", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 48px;
+  font-weight: 750;
+  word-spacing: 5px;
+}
+
+h3 {
+  font-family:
+    "outfit", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 750;
+  word-spacing: 5px;
+}
+
+p {
+  font-family: "inter";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+ul,
+#navigation {
+  display: flex;
+  gap: 4em;
+  text-decoration: none;
+  list-style: none;
+}
+
+.about {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 50px;
+}
+
+.sub-heading,
+.text-description {
+  margin: 25px 0;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech-stack {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 50px;
+  background-color: whitesmoke;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3em;
+  max-width: 1200px;
+}
+
+.card {
+  flex: 1 1 300px;
+  max-width: 350px;
+}
+
+.profiles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30%;
+  padding: 50px;
+}
+
+.profiles ul {
+  font-size: 3em;
+}
+
+i,
+h1,
+h2,
+.logo {
+  color: var(--base-color);
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 25px;
+  height: 30%;
+  padding: 50px;
+  background-color: whitesmoke;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--base-color);
+}
+
+footer p {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+button {
+  background-color: var(--base-color);
+  width: 100px;
+  height: 35px;
+  color: white;
+  font-size: medium;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+input {
+  width: 25vw;
+  height: 2em;
+  padding: 10px;
+}
+
+#message {
+  height: 8em;
+  padding: 10px;
+  width: 25vw;
+  margin: 10px 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--base-color);
+  font-family: inherit;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+a:hover,
+a:focus {
+  color: #2a1a8a;
+  text-decoration: none;
+}
+
+/* Responsive styles for mobile and tablets */
+@media (max-width: 900px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+  #navigation {
+    gap: 2em;
+    font-size: 1em;
+  }
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 30px 10px;
+    gap: 20px;
+  }
+  .left-hero,
+  .right-hero {
+    width: 100%;
+    margin: 20px 0;
+    height: auto;
+    align-items: center;
+  }
+  .right-hero img {
+    width: 220px;
+    height: 220px;
+  }
+  h1 {
+    font-size: 2.2em;
+    text-align: center;
+  }
+  h2 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  h3 {
+    font-size: 1.1em;
+    text-align: center;
+  }
+  p {
+    font-size: 1em;
+    text-align: center;
+  }
+  .about,
+  .tech-stack,
+  .profiles,
+  .contact {
+    padding: 30px 10px;
+    width: 100%;
+  }
+  .sub-heading,
+  .text-description {
+    width: 95%;
+    margin: 15px 0;
+  }
+  .cards {
+    flex-direction: column;
+    gap: 1.5em;
+    max-width: 100%;
+  }
+  .card {
+    max-width: 95vw;
+  }
+  .profiles ul {
+    font-size: 2em;
+    gap: 1em;
+  }
+  input,
+  #message {
+    width: 90vw;
+    font-size: 1em;
+  }
+  button {
+    width: 100%;
+    height: 40px;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    padding: 10px 5px;
+  }
+  .hero {
+    padding: 15px 5px;
+  }
+  .about,
+  .tech-stack,
+  .profiles,
+  .contact {
+    padding: 15px 5px;
+  }
+  .right-hero img {
+    width: 140px;
+    height: 140px;
+  }
+  h1 {
+    font-size: 1.4em;
+  }
+  h2 {
+    font-size: 1.1em;
+  }
+  .profiles ul {
+    font-size: 1.3em;
+  }
+  input,
+  #message {
+    width: 95vw;
+  }
+}
