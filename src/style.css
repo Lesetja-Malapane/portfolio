@@ -1,10 +1,11 @@
-@import "https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css";
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Parisienne&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Parisienne&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
   line-height: 1.5;
-  --base-color: #412dcd;
+  --base-color: #3b82f6;
+  --secondary-color: #f59e0b;
+  --neutral-color: #f9fafb;
+  --text-color: #111827;
 }
 
 h1,
@@ -56,11 +57,9 @@ header {
 .hero {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  gap: 25px;
+  justify-content: center;
   height: calc(100vh - 25px);
   padding: 50px 50px;
-  background-color: whitesmoke;
 }
 
 .left-hero {
@@ -92,18 +91,14 @@ header {
 }
 
 h1 {
-  font-family:
-    "outfit", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Poppins", "Montserrat";
   font-size: 64px;
   font-weight: 750;
   word-spacing: 5px;
 }
 
 h2 {
-  font-family:
-    "outfit", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Roboto";
   font-size: 48px;
   font-weight: 750;
   word-spacing: 5px;
@@ -118,8 +113,9 @@ h3 {
   word-spacing: 5px;
 }
 
-p {
-  font-family: "inter";
+main p {
+  color: var(--text-color);
+  font-family: "Lato";
   font-size: 20px;
   font-weight: 400;
 }
@@ -250,6 +246,11 @@ a:hover,
 a:focus {
   color: #2a1a8a;
   text-decoration: none;
+}
+
+.hero,
+.tech-stack {
+  background-color: var(--neutral-color);
 }
 
 /* Responsive styles for mobile and tablets */
