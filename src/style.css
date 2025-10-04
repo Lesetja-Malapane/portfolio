@@ -2,9 +2,9 @@
 
 :root {
   line-height: 1.5;
-  --base-color: #3b82f6;
+  --main-color: #3b82f6;
   --secondary-color: #f59e0b;
-  --neutral-color: #f9fafb;
+  --neutral-color: #eeeeee;
   --text-color: #111827;
 }
 
@@ -86,31 +86,33 @@ header {
   height: 500px;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid var(--base-color);
+  border: 3px solid var(--main-color);
   /* optional: adds a border in your theme color */
 }
 
-h1 {
+#logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3 {
   font-family: "Poppins", "Montserrat";
-  font-size: 64px;
-  font-weight: 750;
+  font-weight: 650;
   word-spacing: 5px;
+}
+
+h1 {
+  font-size: 64px;
 }
 
 h2 {
-  font-family: "Open Sans", "Roboto";
   font-size: 48px;
-  font-weight: 750;
-  word-spacing: 5px;
 }
 
 h3 {
-  font-family:
-    "outfit", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
   font-size: 24px;
-  font-weight: 750;
-  word-spacing: 5px;
 }
 
 main p {
@@ -185,7 +187,7 @@ i,
 h1,
 h2,
 .logo {
-  color: var(--base-color);
+  color: var(--main-color);
 }
 
 .contact {
@@ -201,7 +203,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--base-color);
+  background-color: var(--main-color);
 }
 
 footer p {
@@ -210,7 +212,7 @@ footer p {
 }
 
 button {
-  background-color: var(--base-color);
+  background-color: var(--main-color);
   width: 100px;
   height: 35px;
   color: white;
@@ -234,9 +236,10 @@ input {
 
 a {
   text-decoration: none;
-  color: var(--base-color);
+  color: var(--main-color);
   font-family: inherit;
-  font-weight: 500;
+  font-weight: 550;
+  font-size: 1.2rem;
   transition: color 0.2s;
 }
 
