@@ -156,18 +156,13 @@ ul,
 }
 
 .cards {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 3em;
-  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 3em;
 }
 
 .card {
-  flex: 1 1 300px;
-  max-width: 350px;
+  padding: 20px;
 }
 
 .profiles {
@@ -253,6 +248,14 @@ a:focus {
 .tech-stack,
 .contact {
   background-color: var(--neutral-color);
+}
+
+#heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 5px;
 }
 
 /* Responsive styles for mobile and tablets */
