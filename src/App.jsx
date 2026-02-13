@@ -8,6 +8,7 @@ import instagramIcon from './assets/instagram-brands-solid-full.svg';
 import linkedinIcon from './assets/linkedin-brands-solid-full.svg';
 import tiktokIcon from './assets/tiktok-brands-solid-full.svg';
 import xTwitterIcon from './assets/x-twitter-brands-solid-full.svg';
+import profileImage from "/public/images/profile_image.webp";
 // import reactIcon from './assets/react.svg'; 
 
 function App() {
@@ -54,17 +55,13 @@ function App() {
         </div>
 
         <div className="shrink-0">
-          <div className="w-64 h-64 md:w-96 md:h-96 bg-gray-300 rounded-full shadow-inner animate-pulse">
-            {/* TODO: When you are ready to add your real image:
-              1. Remove the 'bg-gray-300' and 'animate-pulse' classes above.
-              2. Uncomment the img tag below:
-            */}
-            {/* <img 
-              src="/path-to-your-image.jpg" 
-              alt="Profile" 
+          <div className="w-64 h-64 md:w-96 md:h-96 rounded-full shadow-inner border border-black-200 ">
+            <img 
+              src={profileImage} 
+              alt="Profile Image" 
               className="w-full h-full object-cover rounded-full" 
             /> 
-            */}
+           
           </div>
         </div>
 
