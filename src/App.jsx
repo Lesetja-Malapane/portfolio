@@ -33,13 +33,14 @@ function App() {
             Working on a new portfolio, Stay Tuned!
           </p>
 
-          {/* Social Icons Container */}
-          {/* justify-center md:justify-start: Centers icons on mobile, aligns left on desktop */}
           <div className="flex justify-center md:justify-start gap-4 pt-2">
             {socialLinks.map((social, index) => (
               <a 
                 key={index} 
-                href="#"
+                href={social.link} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                aria-label={social.alt}
                 className="hover:scale-110 transition-transform duration-200"
               >
                 <img 
