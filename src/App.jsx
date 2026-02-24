@@ -22,7 +22,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white flex flex-col items-center justify-center p-6 relative font-sans">
-      <div className="flex flex-col-reverse md:flex-row items-center justify-center w-full max-w-6xl gap-12 md:gap-24">
+      <div className="flex flex-col-reverse md:flex-row items-center justify-center w-full max-w-6xl gap-12 md:gap-24"> {/**Important line, keeps things in the middle */}
         
         {/* Left Section (Text) */}
         <div className="text-center md:text-left space-y-6">
