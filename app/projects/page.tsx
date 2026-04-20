@@ -74,7 +74,7 @@ const projects: Project[] = [
 
 export default function ProjectsPage() {
   return (
-    <div className="mx-auto max-w-2xl px-6 py-16 sm:py-20">
+    <div className="mx-auto max-w-3xl px-6 py-16 sm:py-20">
       <header className="mb-10">
         <h1 className="text-3xl font-semibold tracking-tight lowercase">
           my projects.
