@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "projects — Lesetja Malapane",
@@ -11,65 +12,35 @@ type Project = {
   description: string;
   stack: string[];
   links?: { label: string; href: string }[];
+  imageUrl?: string;
+  sectionRef?: string;
 };
 
 const projects: Project[] = [
   {
-    title: "Gitlytics",
-    period: "Sept 2024 – Present",
-    description:
-      "A mobile app for visualising GitHub collaboration patterns. Built with Flutter on the frontend and Firebase for auth + data; a Python service crunches the Git history.",
-    stack: [
-      "Flutter",
-      "Dart",
-      "Firebase",
-      "Python",
-      "React",
-      "SQLite",
-      "Docker",
-      "HTML/CSS",
-    ],
-    links: [
-      { label: "Source", href: "https://github.com/lesetja-malapane" },
-    ],
-  },
-  {
-    title: "Socket Battle",
-    period: "WeThinkCode_",
-    description:
-      "A two-player command-line game written in Java using raw socket connections. Lightweight protocol, hand-rolled game loop, turn-based state synced between peers.",
-    stack: ["Java", "Sockets", "CLI"],
-    links: [
-      { label: "Source", href: "https://github.com/lesetja-malapane" },
-    ],
-  },
-  {
-    title: "Odin E-Commerce",
-    period: "Jan 2025 – Present",
-    description:
-      "A storefront built as part of The Odin Project — product grid, cart state, checkout flow. Deployed on GitHub Pages.",
-    stack: ["React", "JavaScript", "HTML/CSS"],
-    links: [
-      { label: "Source", href: "https://github.com/lesetja-malapane" },
-    ],
-  },
-  {
-    title: "Battleship",
-    period: "2025",
-    description:
-      "Classic battleship game implemented from scratch in vanilla JavaScript — no framework, no libraries. Drag-to-place ships, turn logic, win detection.",
-    stack: ["JavaScript", "HTML", "CSS"],
-    links: [
-      { label: "Source", href: "https://github.com/lesetja-malapane" },
-    ],
-  },
-  {
     title: "Progress Pals",
-    period: "2025",
+    period: "2026",
     description:
       "A mobile companion app for tracking daily habits and goals. Flutter + Firebase, with Google Maps for location-tagged entries.",
     stack: ["Flutter", "Firebase", "Google Maps API", "SQL"],
+    imageUrl: "/progress_pals.png",
+    links: [
+      {label: "App Store", href: "https://apps.apple.com/sa/app/progress-pals/id6759215046"},
+    ],
+    sectionRef: "progress_pals",
   },
+  {
+    title: "Memorialy",
+    period: "2026 - Present",
+    description: "An AI Journal app that uses natural language processing to help users reflect on their day and track their mental health over time.",
+    stack: ["Flutter", "Firebase", "Google Gemini API"],
+    imageUrl: "/memorialy.png",
+    links: [
+      {label: "App Store", href: "https://apps.apple.com/us/app/memorialy-ai-journal/id6760933658"},
+      {label: "Web page", href: "https://memorialy.app"}
+    ],
+    sectionRef: "memorialy",
+  }
 ];
 
 export default function ProjectsPage() {
@@ -92,11 +63,14 @@ export default function ProjectsPage() {
           >
             <div
               aria-hidden
-              className="h-36 w-full bg-linear-to-br from-accent-soft via-surface to-background border-b border-border flex items-center justify-center"
+              className="h-60 w-full bg-linear-to-br from-accent-soft via-surface to-background border-b border-border flex items-center justify-center"
             >
-              <span className="font-mono text-xs text-accent/70 tracking-widest uppercase">
+              {/* <span className="font-mono text-xs text-accent/70 tracking-widest uppercase">
                 {p.title}
-              </span>
+              </span> */}
+              {p.imageUrl && (
+                <Image src={p.imageUrl} alt={p.title} className="object-cover object-top w-full h-full" width={1920} height={36}/>
+              )}
             </div>
             <div className="p-6">
               <div className="flex items-baseline justify-between gap-4">

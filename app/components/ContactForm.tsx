@@ -113,7 +113,7 @@ export default function ContactForm() {
 
       <p className="text-xs text-muted">
         By submitting this form, I agree to the{" "}
-        <Link href="/privacy.html" className="underline hover:text-foreground">
+        <Link href="/privacy" className="underline hover:text-foreground">
           privacy policy
         </Link>
         .

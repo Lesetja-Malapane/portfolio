@@ -16,24 +16,16 @@ type Entry = {
 
 const entries: Entry[] = [
   {
-    role: "{VOLUNTEER_ROLE_1}",
-    organization: "{ORGANIZATION_NAME}",
-    period: "{Jan 2024 – Present}",
-    location: "{City, Country}",
-    description:
-      "{A short sentence about the organisation's mission and what you did with them.}",
+    role: "Recruitment Ambassador",
+    organization: "WeThinkCode_",
+    period: "Oct 2025 – Feb 2026",
+    location: "Johannesburg, GP",
+    description: "Supported the recruitment process for aspiring learners.",
     contributions: [
-      "{An impact-focused bullet — number or outcome where possible.}",
-      "{Another bullet — the skill you brought or learned.}",
-      "{Another bullet — something you're proud of.}",
+      "Introduced Aspiring learners to fundimentals of programming using Python",
+      "Hosted workshops and Q&A sessions to guide applicants through the admissions process.",
+      "Guided prospective students in understanding the unique peer-learning model and curriculum of WeThinkCode_.",
     ],
-  },
-  {
-    role: "{VOLUNTEER_ROLE_2}",
-    organization: "{ORGANIZATION_NAME}",
-    period: "{Jun 2023 – Dec 2023}",
-    description: "{A short sentence about the role and its purpose.}",
-    contributions: ["{Contribution bullet.}", "{Contribution bullet.}"],
   },
 ];
 

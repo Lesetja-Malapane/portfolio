@@ -12,30 +12,29 @@ type Entry = {
 
 const work: Entry[] = [
   {
-    org: "The Odin Project",
-    role: "Self-directed Learner",
-    period: "Jan 2025 – Present",
-    location: "Remote",
-    bullets: [
-      "Built dynamic websites hosted on GitHub Pages.",
-      "Developed an e-commerce website from the ground up.",
-      "Created a Battleship game in vanilla JavaScript, HTML and CSS.",
-    ],
-  },
-  {
-    org: "WeThinkCode_",
-    role: "Software Engineering Student",
-    period: "Sept 2024 – Dec 2025",
+    org: "WeThinkCode_ (Volunteer)",
+    role: "Recruitment Ambassador",
+    period: "Oct 2025 – Feb 2026",
     location: "Johannesburg, GP",
     bullets: [
-      "Developed a Flutter mobile app backed by SQL, Firebase and the Google Maps API.",
-      "Built a command-line game in Java using socket connections for multiplayer.",
-      "Explored ways to visualise GitHub collaboration in a team-work setting.",
+      "Introduced Aspiring learners to fundimentals of programming using Python",
+      "Hosted workshops and Q&A sessions to guide applicants through the admissions process.",
+      "Guided prospective students in understanding the unique peer-learning model and curriculum of WeThinkCode_.",
     ],
   },
 ];
 
 const education: Entry[] = [
+  {
+    org: "University of South Africa (UNISA)",
+    role: "Bachelor of Science, Computing",
+    period: "Jan 2026 – Present",
+    location: "Pretoria, GP",
+    bullets: [
+      "First-year coursework in programming, data structures, and mathematics.",
+      "Gaining foundational knowledge in software development and computer science principles.",
+    ],
+  },
   {
     org: "WeThinkCode_",
     role: "National Diploma, Computer Software Engineering",
@@ -46,6 +45,7 @@ const education: Entry[] = [
       "Coursework in algorithms, systems programming, web and mobile development.",
     ],
   },
+  
 ];
 
 export default function WorkEducationTabs() {

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import WorkEducationTabs from "./components/WorkEducationTabs";
+import Image from "next/image";
 import {
   DownloadIcon,
   GitHubIcon,
@@ -16,10 +17,10 @@ const featuredProjects = [
     href: "/projects",
   },
   {
-    title: "Socket Battle (CLI)",
+    title: "Memorialy",
     description:
-      "A command-line multiplayer game in Java using raw socket connections.",
-    stack: ["Java", "Sockets", "CLI"],
+      "An AI journal app that uses natural language processing to help users reflect on their day and track their mental health over time.",
+    stack: ["Flutter", "Firebase", "Google Gemini API"],
     href: "/projects",
   },
 ];
@@ -27,13 +28,28 @@ const featuredProjects = [
 export default function Home() {
   return (
     <div className="mx-auto max-w-3xl px-6 py-16 sm:py-6">
-      <section className="flex flex-col md:flex-row md:items-start gap-10">
+      <section className="flex flex-col md:flex-row-reverse md:items-start gap-10">
+
+        <div
+          aria-hidden
+          className="relative shrink-0 w-44 sm:w-52 aspect-3/4 self-center md:self-start"
+        >
+          <div className="absolute inset-0 rounded-2xl rotate-6 bg-(--accent-soft)/40 border border-border" />
+          <div className="absolute inset-0 rounded-2xl -rotate-3 bg-linear-to-br from-accent-soft via-surface to-background border border-border flex items-center justify-center">
+        <Image src="/profile.png" alt="Profile" className="object-cover rounded-2xl" fill style={{
+          objectFit: 'cover',
+          objectPosition: 'center',
+        }} />
+          </div>
+        </div>
+
+        {/* About Section */}
         <div className="flex max-w-[320px] flex-col sm:max-w-full">
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight lowercase leading-tight">
             lesetja here. <span aria-hidden>👋</span>
           </h1>
           <p className="text-muted text-base">
-            software engineer from Johannesburg<span aria-hidden>🇿🇦</span>
+            software engineer from Johannesburg <span aria-hidden>🇿🇦</span>
           </p>
 
           <p className="mt-6 text-(--foreground)/90 leading-relaxed">
@@ -77,18 +93,6 @@ export default function Home() {
                 <MailIcon />
               </a>
             </div>
-          </div>
-        </div>
-
-        <div
-          aria-hidden
-          className="relative shrink-0 w-44 sm:w-52 aspect-3/4 self-center md:self-start"
-        >
-          <div className="absolute inset-0 rounded-2xl rotate-6 bg-(--accent-soft)/40 border border-border" />
-          <div className="absolute inset-0 rounded-2xl -rotate-3 bg-linear-to-br from-accent-soft via-surface to-background border border-border flex items-center justify-center">
-            <span className="font-mono text-xs text-accent/70 uppercase tracking-widest">
-              photo
-            </span>
           </div>
         </div>
       </section>

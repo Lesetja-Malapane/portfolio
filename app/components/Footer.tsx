@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="mx-auto max-w-3xl px-6 py-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-sm text-muted">
         <p>© {new Date().getFullYear()} Lesetja Malapane.</p>
         <div className="flex items-center gap-4">
-          <Link href="/privacy.html" className="hover:text-foreground">
+          <Link href="/privacy" className="hover:text-foreground">
             privacy
           </Link>
           <a
